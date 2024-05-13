@@ -3,6 +3,7 @@ import {
   ShopOutlined,
   ShoppingCartOutlined,
   UserOutlined,
+  FolderFilled,
 } from "@ant-design/icons";
 import { Menu } from "antd";
 import { useEffect, useState } from "react";
@@ -30,23 +31,59 @@ function SideMenu() {
         selectedKeys={[selectedKeys]}
         items={[
           {
-            label: "Dashbaord",
+            label: "Design team",
             icon: <AppstoreOutlined />,
-            key: "/",
+            key: "/design team",
           },
           {
-            label: "Inventory",
-            key: "/inventory",
+            label: "Marketting team",
+            key: "/Marketting",
             icon: <ShopOutlined />,
           },
           {
-            label: "Orders",
-            key: "/orders",
+            label: "Development team",
+            key: "/deleopement",
             icon: <ShoppingCartOutlined />,
           },
           {
-            label: "Customers",
-            key: "/customers",
+            label: "Products",
+            key: "/product",
+            icon: <FolderFilled />,
+          },
+
+          {
+            label: "Sales",
+            key: "/sales",
+            icon: <FolderFilled />,
+          },
+          {
+            label: "Design",
+            key: "/Design",
+            icon: <FolderFilled />,
+          },
+          {
+            label: "office",
+            key: "/office",
+            icon: <FolderFilled />,
+          },
+          {
+            label: "Legal",
+            key: "/legal",
+            icon: <FolderFilled />,
+          },
+          {
+            label: "Invite teammates",
+            key: "/invite",
+            icon: <UserOutlined />,
+          },
+          {
+            label: "Help and first steps",
+            key: "/help",
+            icon: <UserOutlined />,
+          },
+          {
+            label: "Add biling",
+            key: "/biling",
             icon: <UserOutlined />,
           },
         ]}

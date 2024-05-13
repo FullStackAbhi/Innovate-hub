@@ -1,16 +1,17 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Customers from "../../Pages/Customers";
-import Dashboard from "../../Pages/Dashbaord";
-import Inventory from "../../Pages/Inventory";
-import Orders from "../../Pages/Orders";
+import Product from "../../Pages/Products";
+import Sales from "../../Pages/Products";
+import Developement from "../../Pages/Products";
+import Design from "../../Pages/Products";
 
 function AppRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<Dashboard />}></Route>
-      <Route path="/inventory" element={<Inventory />}></Route>
-      <Route path="/orders" element={<Orders />}></Route>
-      <Route path="/customers" element={<Customers />}></Route>
+      <Route path="/" element={<Product />}></Route>
+      <Route path="/product" element={<Product />}></Route>
+      <Route path="/Sales" element={<Sales />}></Route>
+      <Route path="/development" element={<Developement />}></Route>
+      <Route path="/design" element={<Design />}></Route>
     </Routes>
   );
 }
